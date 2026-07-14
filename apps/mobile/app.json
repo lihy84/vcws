@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Eco2Zero",
+    "slug": "eco2zero",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#122821"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ca.vcws.eco2zero"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#122821",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "package": "ca.vcws.eco2zero"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "parentOrg": "Victoria Cultural & Wellness Society"
+    }
+  }
+}

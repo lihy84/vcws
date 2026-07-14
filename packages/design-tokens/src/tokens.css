@@ -1,0 +1,23 @@
+:root {
+  --sea-ink: #122821;
+  --sea-deep: #1d4036;
+  --sea-mid: #2f6a58;
+  --sea-soft: #6fa894;
+  --mist: #eef4f0;
+  --foam: #f7fbf8;
+  --sand: #e8dfd0;
+  --sunlit: #d4a574;
+  --ink: #1a2420;
+  --muted: #5a6b63;
+  --line: rgba(18, 40, 33, 0.12);
+  --eco-leaf: #3f8f6b;
+  --eco-sky: #7eb8a2;
+  --eco-earth: #8a6d4b;
+  --glass: rgba(247, 251, 248, 0.9);
+  --shadow: 0 1px 0 rgba(18, 40, 33, 0.08), 0 16px 40px rgba(18, 40, 33, 0.08);
+  --radius: 0;
+  --max: 72rem;
+  --header: 4.5rem;
+  --font-display-fallback: Georgia, "Iowan Old Style", serif;
+  --font-body-fallback: "Avenir Next", "Segoe UI", sans-serif;
+}

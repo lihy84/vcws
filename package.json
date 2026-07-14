@@ -1,0 +1,17 @@
+{
+  "name": "vcws",
+  "private": true,
+  "packageManager": "pnpm@9.1.3",
+  "scripts": {
+    "dev": "pnpm --filter @vcws/web dev",
+    "dev:web": "pnpm --filter @vcws/web dev",
+    "dev:mobile": "pnpm --filter @vcws/mobile start",
+    "build": "pnpm --filter @vcws/web build",
+    "build:web": "pnpm --filter @vcws/web build",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -132,6 +132,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="section" id="recent-event">
+        <div className="split">
+          <div className="split__media">
+            <Image
+              src={copy.events.recent[0].image}
+              alt={t(copy.events.recent[0].name, lang)}
+              width={1200}
+              height={1500}
+              className="event-cover"
+              style={{
+                width: "100%",
+                height: "32rem",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+            />
+          </div>
+          <div>
+            <div className="section__head">
+              <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
+              <h2>{t(copy.events.recent[0].name, lang)}</h2>
+            </div>
+            <p>{t(copy.events.recent[0].headline, lang)}</p>
+            <p>{t(copy.events.recent[0].meta, lang)}</p>
+            <Link href={`/events#${copy.events.recent[0].slug}`} className="btn">
+              {t(copy.cta.learnMore, lang)}
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="split split--reverse">
           <div className="split__media">

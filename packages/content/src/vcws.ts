@@ -314,6 +314,135 @@ export const copy = {
       zh: "活动贯彻低浪费和环保理念，培养切实可行的可持续生活习惯，支持与维多利亚市零废弃目标相一致的社区参与。",
       en: "Our events lean low-waste and practical—building sustainable daily habits aligned with Victoria’s zero-waste goals.",
     },
+    recentTitle: { zh: "近期活动", en: "Recent gatherings" },
+    galleryTitle: { zh: "活动瞬间", en: "Moments from the day" },
+    featuredLabel: { zh: "工作坊形式", en: "Workshop format" },
+    recent: [
+      {
+        slug: "dance-wellness",
+        name: { zh: "舞动疗愈", en: "Dance & Wellness" },
+        headline: {
+          zh: "当身体开始舞动，心与心便有了回响",
+          en: "When bodies begin to move, hearts begin to connect",
+        },
+        subtitle: {
+          zh: "一场关于活力、连接与温暖的社区舞动疗愈之旅",
+          en: "A community journey of movement, well-being, and human connection",
+        },
+        meta: {
+          zh: "2026年10月13日 · Fernwood Neighbourhood House",
+          en: "October 13, 2026 · Fernwood Neighbourhood House",
+        },
+        facilitator: {
+          zh: "舞动疗愈导师笑含",
+          en: "Guided by dance and wellness facilitator 笑含",
+        },
+        quote: {
+          zh: "因舞动而相聚，因善意而连接。",
+          en: "Moving together, connecting through kindness.",
+        },
+        image: "/images/events/dance-lead.jpg",
+        lead: [
+          {
+            zh: "有一种温暖，不需要太多语言；有一种连接，只需要一颗愿意敞开的心。2026年10月13日，在 Fernwood Neighbourhood House 温暖而友好的空间里，维多利亚文化与健康协会举办了一场充满活力、欢笑与感动的舞动疗愈公益活动。",
+            en: "Some moments of warmth need very few words. Some of the deepest connections begin with simply being open to one another. On October 13, 2026, Victoria Cultural & Wellness Society brought neighbours together at Fernwood Neighbourhood House for a joyful Dance & Wellness session.",
+          },
+          {
+            zh: "在这里，没有人需要表现得多么出色，也没有人需要跟上谁的节奏。我们不追求标准的舞步，只希望每一个人都能暂时放下生活中的忙碌与压力，回到自己的身体，感受音乐与呼吸，也重新感受内心那份自然流动的生命力。当音乐响起，一个微笑、一次眼神交汇，都让陌生人之间的距离悄然缩短。",
+            en: "No one needed to be an experienced dancer, follow perfect steps, or keep up with anyone else. The hope was simply to step away from the busyness of everyday life, reconnect with the body, enjoy the music, and rediscover a natural sense of energy. As the music began, a smile or a shared glance helped bridge the distance between people who had just met.",
+          },
+        ],
+        sections: [
+          {
+            title: {
+              zh: "从拘谨到舒展，从陌生到亲近",
+              en: "From hesitation to freedom",
+            },
+            body: {
+              zh: "活动中最令人珍惜的，并不是谁跳出了多么精彩的舞步，而是参与者逐渐打开自己的过程。当大家不再担心动作是否正确，手臂随着音乐舒展，笑容也变得越来越自然。不同的年龄、生活背景与文化经历，在音乐和舞动中有了共同的语言。我们看到的是身体的舒展，感受到的是心灵逐渐打开的温柔力量。",
+              en: "The most meaningful part of the session was not how beautifully anyone danced, but how people gradually became more comfortable being themselves. As participants let go of the pressure to get every movement right, their gestures became freer and smiles appeared more naturally. Different ages, cultures, and life experiences found common ground through music and movement. We could see bodies relaxing, and sense people opening to the moment and to one another.",
+            },
+          },
+          {
+            title: {
+              zh: "一杯茶、一份点心",
+              en: "Tea, treats, and conversation",
+            },
+            body: {
+              zh: "舞动带来的美好，并没有随着音乐的暂停而结束。茶歇时光里，大家放慢脚步，享用茶点，聊聊刚才的体验，也分享生活中的点滴。一杯茶、一份点心，不只是小小的休息，更希望每一位参与者感到被欢迎、被尊重，并愿意安心停留。有时，人与人之间的连接，就从这样一段不需要刻意安排的闲谈开始。",
+              en: "The warmth continued after the music paused. The refreshment break offered time to slow down, enjoy a treat, and talk about the movement and about ordinary life. A cup of tea and a small bite were a way of caring for each person, so they could feel welcome not only to move, but also to stay. Sometimes the most genuine connections begin with an unhurried conversation.",
+            },
+          },
+          {
+            title: {
+              zh: "分享心中的感受",
+              en: "Sharing what we felt",
+            },
+            body: {
+              zh: "当舞动的喜悦慢慢安静下来，我们邀请大家说出自己的感受：身体自由时的轻盈，暂时放下日常烦恼的片刻，以及与其他居民相遇、交流的温暖。每个人的体验都是独特的。当一个人愿意表达，另一个人愿意倾听，彼此之间便多了一份理解。这些交流让活动的意义超越了舞动本身。",
+              en: "As the energy of the dancing settled, participants were invited to share what they had noticed: the lightness of moving freely, a brief pause from everyday worries, or the warmth of meeting other community members. Every experience was unique. When one person feels comfortable speaking and another is willing to listen, understanding begins to grow. Those conversations gave the gathering a meaning that reached beyond movement itself.",
+            },
+          },
+          {
+            title: {
+              zh: "最动人的疗愈，是真实的连接",
+              en: "Healing through connection",
+            },
+            body: {
+              zh: "舞动让身体获得自由，茶歇让人们自在相聚，分享则让内心的感受有机会被听见。一个真诚的笑容可以让人感到被接纳，一段共同舞动、喝茶和分享的时光也可以提醒我们：即使每个人都有自己的生活与烦恼，我们依然能够在社区中彼此陪伴。真正有温度的社区，是人们有机会相遇、认识彼此，并在需要的时候感受到来自他人的善意。这一天，这样的连接真实地发生了。",
+              en: "Movement offered freedom of expression. The refreshment break created space to meet. Sharing let personal feelings be heard. A sincere smile can help someone feel welcomed, and time spent dancing, drinking tea, and listening can remind us that we can still find companionship in community. A caring community is about more than living in the same neighbourhood. It is about chances to meet, share happiness, and feel the kindness of others. On this day, that connection became real.",
+            },
+          },
+          {
+            title: {
+              zh: "让快乐流动，让善意延续",
+              en: "Let joy continue",
+            },
+            body: {
+              zh: "我们期待舞动疗愈不只是一次性的相聚，而能够逐渐成为社区生活中持续发生的一份美好，让更多居民在日常生活里找到快乐、活力、陪伴与归属感。当一个人重新感受到自己的生命力，快乐便有了开始；当一群人愿意彼此连接，社区便有了温度；当善意不断流动，美好便会在更多人的生活中生根发芽。",
+              en: "We hope Dance & Wellness grows beyond a one-time gathering and becomes an ongoing part of community life, offering more residents joy, vitality, companionship, and a sense of belonging. When we reconnect with our own vitality, joy begins to grow. When people connect with one another, a community becomes warmer. And when kindness continues to flow, good things take root in more lives.",
+            },
+          },
+        ],
+        gallery: [
+          {
+            src: "/images/events/dance-arms.jpg",
+            alt: {
+              zh: "参与者随着音乐举起双臂",
+              en: "Participants reaching upward with the music",
+            },
+          },
+          {
+            src: "/images/events/dance-seated.jpg",
+            alt: {
+              zh: "参与者在垫上做手抚心口的舞动",
+              en: "A seated movement with hands over the heart",
+            },
+          },
+          {
+            src: "/images/events/dance-heart.jpg",
+            alt: {
+              zh: "大家闭上眼睛，把手放在心口",
+              en: "The group pausing with hands over the heart",
+            },
+          },
+          {
+            src: "/images/events/dance-group.jpg",
+            alt: {
+              zh: "舞动疗愈活动结束后的合影",
+              en: "Participants together after the Dance & Wellness session",
+            },
+          },
+          {
+            src: "/images/events/dance-table.jpg",
+            alt: {
+              zh: "茶歇时分享的茶点与水果",
+              en: "Tea, fruit, and treats shared during the break",
+            },
+          },
+        ],
+      },
+    ],
     featured: {
       name: {
         zh: "Small Actions, Big Impact",
@@ -493,8 +622,8 @@ export const copy = {
       {
         title: { zh: "活动参与", en: "Join an Event" },
         body: {
-          zh: "了解社区工作坊与可持续行动挑战的参与方式。",
-          en: "See how to join workshops and community action challenges.",
+          zh: "回看舞动疗愈，并了解社区工作坊与可持续行动挑战。",
+          en: "Revisit Dance & Wellness, and see how to join workshops and community challenges.",
         },
         href: "/events",
       },

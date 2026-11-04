@@ -6,7 +6,7 @@ import {
   useContext,
   useEffect,
   useMemo,
-  useState,
+  useSyncExternalStore,
 } from "react";
 import type { Lang } from "@vcws/content/vcws";
 
@@ -17,24 +17,42 @@ type LanguageContextValue = {
 };
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
+const languageStorageKey = "vcws-lang";
+const languageChangeEvent = "vcws-language-change";
+
+function getStoredLanguage(): Lang {
+  const saved = window.localStorage.getItem(languageStorageKey);
+  return saved === "zh" ? "zh" : "en";
+}
+
+function subscribeToLanguage(onStoreChange: () => void) {
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === languageStorageKey) onStoreChange();
+  };
+
+  window.addEventListener("storage", onStorage);
+  window.addEventListener(languageChangeEvent, onStoreChange);
+
+  return () => {
+    window.removeEventListener("storage", onStorage);
+    window.removeEventListener(languageChangeEvent, onStoreChange);
+  };
+}
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const lang = useSyncExternalStore(
+    subscribeToLanguage,
+    getStoredLanguage,
+    (): Lang => "en",
+  );
 
   useEffect(() => {
-    const saved = window.localStorage.getItem("vcws-lang");
-    if (saved === "zh" || saved === "en") {
-      setLangState(saved);
-      document.documentElement.lang = saved === "zh" ? "zh-Hans" : "en";
-      return;
-    }
-    document.documentElement.lang = "en";
-  }, []);
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+  }, [lang]);
 
   const setLang = useCallback((next: Lang) => {
-    setLangState(next);
-    window.localStorage.setItem("vcws-lang", next);
-    document.documentElement.lang = next === "zh" ? "zh-Hans" : "en";
+    window.localStorage.setItem(languageStorageKey, next);
+    window.dispatchEvent(new Event(languageChangeEvent));
   }, []);
 
   const toggle = useCallback(() => {

@@ -19,10 +19,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="site-header__inner">
@@ -47,6 +43,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 className={active ? "is-active" : undefined}
+                onClick={() => setOpen(false)}
               >
                 {t(copy.nav[item.key], lang)}
               </Link>

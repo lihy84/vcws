@@ -1,0 +1,3 @@
+import { PageIntro } from "@/components/PageIntro";
+const resources=["How to Reduce Household Waste","Beginner’s Guide to Composting","Sustainable Grocery Shopping","Waste Reduction Checklist","Sustainable Living Starter Kit","Eco Challenge Workbook"];
+export default function ResourcesPage(){return <><PageIntro eyebrow="Educational hub" title="Tools for everyday change" body="Clear, practical resources that make sustainable choices easier at home, at work, and in your neighbourhood."/><section className="section"><div className="section-inner resource-grid">{resources.map((resource,i)=><article key={resource}><span>{i<3?"Article":"PDF guide"}</span><h2>{resource}</h2><button>Coming soon ↗</button></article>)}</div></section></>}

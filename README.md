@@ -7,6 +7,7 @@ Victoria Cultural & Wellness Society — org website today, Eco2Zero mobile next
 ```text
 apps/
   web/       # Next.js org website (@vcws/web) → deploy on Vercel
+  eco2zero-web/ # Next.js Eco2Zero zone → served at /eco2zero
   mobile/    # Expo Eco2Zero shell (@vcws/mobile)
 packages/
   content/        # Shared bilingual copy — VCWS + Eco2Zero (English-first)
@@ -31,6 +32,7 @@ corepack enable
 pnpm install
 
 pnpm dev:web      # http://localhost:3000 — VCWS site
+pnpm dev:eco2zero # http://localhost:3001/eco2zero — Eco2Zero website
 pnpm dev:mobile   # Expo — Eco2Zero shell using shared tokens/content
 ```
 
@@ -46,6 +48,16 @@ npx vercel --prod
 ```
 
 Live production URL after deploy: https://vcws-flame.vercel.app
+
+### Eco2Zero multi-zone deployment
+
+Eco2Zero is an independent Next.js zone with `basePath: /eco2zero` and a
+unique `assetPrefix`. Create a second Vercel project from this repository with
+`apps/eco2zero-web` as its root directory. Deploy it, then set `ECO2ZERO_ORIGIN`
+on the primary VCWS project to that deployment origin (for example,
+`https://eco2zero-vcws.vercel.app`) and redeploy the primary project. The main
+site rewrites `/eco2zero`, its child routes, and Eco2Zero static assets to the
+new project while keeping the public URL on the VCWS domain.
 
 `vercel.json` runs `pnpm install`, builds `@vcws/web`, then exposes `.next` at the monorepo root for Vercel’s Next.js builder.
 

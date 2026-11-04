@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "pnpm --filter @vcws/web dev",
     "dev:web": "pnpm --filter @vcws/web dev",
+    "dev:eco2zero": "pnpm --filter @vcws/eco2zero-web dev",
     "dev:mobile": "pnpm --filter @vcws/mobile start",
     "build": "pnpm --filter @vcws/web build",
     "build:web": "pnpm --filter @vcws/web build",
+    "build:eco2zero": "pnpm --filter @vcws/eco2zero-web build",
+    "build:vercel": "sh scripts/vercel-build.sh",
     "lint": "pnpm -r --if-present lint",
     "typecheck": "pnpm -r --if-present typecheck"
   },

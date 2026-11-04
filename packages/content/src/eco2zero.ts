@@ -7,10 +7,12 @@ import type { Lang } from "./types";
 export const nav = [
   { href: "/", key: "home" as const },
   { href: "/about", key: "about" as const },
-  { href: "/how-it-works", key: "howItWorks" as const },
-  { href: "/impact", key: "impact" as const },
+  { href: "/eco-points", key: "ecoPoints" as const },
   { href: "/programs", key: "programs" as const },
+  { href: "/schools", key: "schools" as const },
+  { href: "/impact", key: "impact" as const },
   { href: "/partners", key: "partners" as const },
+  { href: "/volunteer", key: "volunteer" as const },
   { href: "/contact", key: "contact" as const },
 ];
 
@@ -30,58 +32,69 @@ export const copy = {
   nav: {
     home: { en: "Home", zh: "首页" },
     about: { en: "About", zh: "关于" },
-    howItWorks: { en: "How It Works", zh: "如何参与" },
+    ecoPoints: { en: "Eco Points", zh: "环保积分" },
     impact: { en: "Impact", zh: "影响力" },
     programs: { en: "Programs & Events", zh: "项目与活动" },
+    schools: { en: "Schools", zh: "学校合作" },
     partners: { en: "Partners", zh: "合作伙伴" },
+    volunteer: { en: "Volunteer", zh: "志愿者" },
     contact: { en: "Contact", zh: "联系我们" },
   },
   home: {
     heroHeadline: {
-      en: "Small Actions, Big Impact",
-      zh: "小行动，大影响",
+      en: "Building Sustainable Communities Through Everyday Action",
+      zh: "通过日常行动建设可持续社区",
     },
     heroSub: {
-      en: "Join a growing community taking simple everyday actions to reduce waste, save resources, and create a more sustainable future.",
-      zh: "加入持续壮大的社区，用简单的日常行动减少浪费、节约资源，共创更可持续的未来。",
+      en: "Eco2Zero empowers individuals, schools, businesses, and communities to take simple environmental actions, earn rewards, and create measurable impact together.",
+      zh: "Eco2Zero帮助个人、学校、商家和社区通过简单环保行动获得积分奖励，并共同创造可衡量的环境影响力。",
     },
     join: { en: "Join the Movement", zh: "加入行动" },
     learn: { en: "Learn How It Works", zh: "了解如何参与" },
-    missionTitle: { en: "Why Eco2Zero Exists", zh: "为什么做 Eco2Zero" },
+    missionTitle: { en: "What is Eco2Zero", zh: "什么是 Eco2Zero" },
     missionBody: {
-      en: "Many people want to help the environment but don't know where to start. Eco2Zero turns sustainability into simple daily actions that anyone can do. Together, small changes create meaningful environmental impact.",
-      zh: "很多人想保护环境，却不知从何开始。Eco2Zero 把可持续变成人人都能做的日常行动。我们一起，让小改变汇成真正的环境影响力。",
+      en: "Eco2Zero is a community-based environmental initiative that encourages people to take simple everyday actions to reduce waste, conserve resources, and build sustainable communities.",
+      zh: "Eco2Zero是一个社区环保行动平台，通过鼓励人们实践简单环保行为，共同减少浪费、节约资源并建设可持续社区。",
     },
     stepsTitle: { en: "How It Works", zh: "如何运作" },
     steps: [
       {
-        title: { en: "Choose an Action", zh: "选择一个行动" },
+        title: { en: "Take Eco Actions", zh: "参与环保行为" },
         body: {
           en: "Bring a reusable cup, walk or bike instead of drive, reduce food waste, plant a tree, choose e-statements.",
           zh: "自带杯、步行或骑行、减少食物浪费、种一棵树、选择电子账单。",
         },
       },
       {
-        title: { en: "Track Your Progress", zh: "记录你的进展" },
+        title: { en: "Earn Eco Points", zh: "获得环保积分" },
         body: {
-          en: "Record your completed actions through our platform.",
-          zh: "在平台上记录你完成的行动。",
+          en: "Record environmental actions and earn points as you build better habits.",
+          zh: "记录环保行为，在养成良好习惯的同时获取积分奖励。",
         },
       },
       {
-        title: { en: "Create Impact Together", zh: "一起创造影响" },
+        title: { en: "Redeem Rewards", zh: "兑换奖励" },
         body: {
-          en: "Watch your individual actions contribute to community-wide environmental goals.",
-          zh: "看见个人行动如何汇入社区级环境目标。",
+          en: "Redeem coffee coupons, local discounts, event benefits, and community rewards.",
+          zh: "兑换咖啡券、商家折扣、活动福利和社区奖励。",
+        },
+      },
+      {
+        title: { en: "Create Community Impact", zh: "创造社区影响力" },
+        body: {
+          en: "See every small action contribute to measurable community-wide change.",
+          zh: "让每个人的小行动共同形成可衡量的社区改变。",
         },
       },
     ],
     impactPreview: {
       title: { en: "Impact Dashboard", zh: "影响力仪表盘" },
       metrics: [
-        { en: "Actions Completed", zh: "已完成行动", sample: "1,245" },
-        { en: "kg CO₂ Reduced", zh: "减少二氧化碳（公斤）", sample: "2,360" },
-        { en: "Community Members", zh: "社区成员", sample: "450" },
+        { en: "Total Actions", zh: "环保行为总数", sample: "1,245" },
+        { en: "Community Members", zh: "参与人数", sample: "450" },
+        { en: "kg CO₂ Reduced", zh: "减少碳排放（公斤）", sample: "2,360" },
+        { en: "kg Waste Diverted", zh: "减少垃圾量（公斤）", sample: "860" },
+        { en: "Partner Businesses", zh: "合作商家数量", sample: "18" },
       ],
     },
     storyQuote: {
@@ -106,12 +119,12 @@ export const copy = {
       zh: "如果保护环境不必从小牺牲开始，而可以从日常的小选择开始呢？",
     },
     mission: {
-      en: "To inspire, educate, and empower individuals and communities to take simple, measurable actions that create positive environmental impact.",
-      zh: "启发、教育并赋能个人与社区，采取简单、可衡量的行动，创造积极的环境影响力。",
+      en: "To inspire, educate and empower communities through simple measurable environmental actions.",
+      zh: "通过简单且可衡量的环保行动激励、教育并赋能社区。",
     },
     vision: {
-      en: "A future where sustainable choices are easy, accessible, and integrated into everyday living, creating healthier communities and a more resilient planet for future generations.",
-      zh: "让可持续选择变得简单、可及，并融入日常生活，为下一代创造更健康的社区与更有韧性的地球。",
+      en: "A future where sustainable living becomes part of everyday life.",
+      zh: "让可持续生活成为每个人的日常习惯。",
     },
     values: [
       {
@@ -140,6 +153,13 @@ export const copy = {
         body: {
           en: "We embrace creative solutions that make sustainability engaging, measurable, and achievable.",
           zh: "拥抱让可持续变得有趣、可衡量、可实现的创新方案。",
+        },
+      },
+      {
+        title: { en: "Impact", zh: "影响力导向" },
+        body: {
+          en: "We focus on measurable outcomes that strengthen funding, learning, and community trust.",
+          zh: "关注可衡量的成果，为资金申请、持续学习与社区信任提供支持。",
         },
       },
     ],

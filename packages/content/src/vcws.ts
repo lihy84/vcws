@@ -443,6 +443,194 @@ export const copy = {
         ],
       },
     ],
+    forum: {
+      slug: "mount-douglas",
+      name: {
+        zh: "从小小创意到美好改变",
+        en: "Small Ideas, Meaningful Change",
+      },
+      headline: {
+        zh: "让学生的创造力点亮可持续生活",
+        en: "Inspiring sustainable living through student creativity",
+      },
+      subtitle: {
+        zh: "Mount Douglas Secondary School 两场环保互动论坛",
+        en: "Two interactive environmental forums at Mount Douglas Secondary School",
+      },
+      meta: {
+        zh: "2026年11月6日 · Mount Douglas Secondary School · 两场论坛，每场约20名学生",
+        en: "November 6, 2026 · Mount Douglas Secondary School · Two forums, about 20 students each",
+      },
+      image: "/images/events/eco-poster.jpg",
+      imageAlt: {
+        zh: "学生们举起自己的环保创意海报合影",
+        en: "Students together with the environmental idea they created",
+      },
+      quote: {
+        zh: "当年轻人被鼓励去创造性地思考、积极地付诸行动时，小小的创意也能够汇聚成真正有意义的改变。",
+        en: "When young people are encouraged to think creatively and act thoughtfully, small ideas can become meaningful change.",
+      },
+      lead: [
+        {
+          zh: "2026年11月6日，维多利亚文化与健康协会把环保意识与可持续生活的理念带进 Mount Douglas Secondary School，举办了两场环保互动论坛。每场约有20名学生参加，整个上午充满好奇、讨论、创意和互动。",
+          en: "On November 6, 2026, Victoria Cultural & Wellness Society brought environmental awareness and sustainable living to Mount Douglas Secondary School, hosting two environmental forums. About 20 students joined each session, and the morning was full of curiosity, discussion, creative ideas, and lively exchange.",
+        },
+        {
+          zh: "我们不只是讲述环境保护的重要性，更希望学生成为积极的思考者、用创意解决问题的参与者，以及可持续未来的共同建设者。",
+          en: "Rather than only talking about environmental protection, we invited students to become active thinkers, creative problem-solvers, and contributors to a more sustainable future.",
+        },
+      ],
+      sections: [
+        {
+          title: { zh: "从环保意识到实际行动", en: "From awareness to action" },
+          body: {
+            zh: "学生们围绕如何减少浪费、在日常生活中作出更可持续的选择，以及如何承担更多环境责任展开交流。课堂很快成为一个开放讨论的空间：大家提问、分享自己的看法、讨论环境挑战，并提出可以把可持续生活放进日常的具体办法。",
+            en: "Students explored practical ways to reduce waste, make more sustainable everyday choices, and take greater responsibility for the environment. The classroom quickly became a place for open conversation: students asked questions, shared their own perspectives, discussed environmental challenges, and proposed practical ways to make sustainable living part of daily routines.",
+          },
+        },
+        {
+          title: { zh: "让创意付诸行动", en: "Creativity in action" },
+          body: {
+            zh: "活动的亮点，是学生把想法做成展示和项目方案。各团队围绕环保主题，用演示文稿和创意构思说明日常的点滴行动如何让社区更健康、更可持续。现场进行了评分和评选，并向优秀团队颁发了包括“最佳创意奖”在内的奖项。",
+            en: "A highlight was seeing students turn their ideas into presentations and project proposals. Teams used slides and creative concepts to show how everyday actions can contribute to a healthier, more sustainable community. A judging session recognized outstanding work, including a Best Creative Idea award for the winning teams.",
+          },
+        },
+        {
+          title: {
+            zh: "一次共同成长的学习体验",
+            en: "A shared learning experience",
+          },
+          body: {
+            zh: "两场活动把环保教育、创意实践、开放讨论和积极参与连在一起，累计约有40人次学生参加。学生的投入，以及参与老师的积极反馈，都说明这种互动方式是有效的。尤其令人鼓舞的是，学生们开始想自己在生活里真正能做到的环保行动，而不只是停留在讨论。",
+            en: "The two sessions brought together environmental education, creativity, open discussion, and participation. About 40 student participations were recorded across both forums. Students' enthusiasm, and the participating teacher's positive feedback, showed the value of this interactive approach. We were especially encouraged to see students identify practical actions they could take in their own lives.",
+          },
+        },
+        {
+          title: { zh: "感恩支持，让社区彼此连接", en: "Gratitude and community connection" },
+          body: {
+            zh: "协会衷心感谢 Mount Douglas Secondary School、参与活动的老师、所有学生，以及付出时间的志愿者。我们也感谢维多利亚市政府通过 My Great Neighbourhood Grant 支持这个项目，让学生有机会把环保意识、创造力和实际行动连在一起。每一个问题、每一个想法、每一项小小的建议，都是迈向更可持续未来的一步。",
+            en: "Victoria Cultural & Wellness Society thanks Mount Douglas Secondary School, the participating teacher, every student, and the volunteers who made the forums possible. We are also grateful to the City of Victoria for supporting this initiative through the My Great Neighbourhood Grant, which helped students connect environmental awareness with creativity and practical action. Every question, every idea, and every small proposal is a step toward a more sustainable future.",
+          },
+        },
+      ],
+      closing: [
+        {
+          zh: "让我们携手同行，让可持续生活成为日常的一部分。",
+          en: "Together, let's make sustainable living part of everyday life.",
+        },
+        {
+          zh: "让善意连接社区，让行动创造改变。",
+          en: "Let kindness connect community, let action create change.",
+        },
+      ],
+      gallery: [
+        {
+          src: "/images/events/eco-welcome.jpg",
+          alt: {
+            zh: "活动开始时，老师与嘉宾互相问候",
+            en: "The teacher and guests greeting one another as the forum begins",
+          },
+        },
+        {
+          src: "/images/events/eco-present.jpg",
+          alt: {
+            zh: "引导人在课堂前介绍从想法到计划",
+            en: "The facilitator introducing how an idea becomes a plan",
+          },
+        },
+        {
+          src: "/images/events/eco-teacher.jpg",
+          alt: {
+            zh: "老师在课堂上与学生交流",
+            en: "The teacher speaking with students during the forum",
+          },
+        },
+        {
+          src: "/images/events/eco-question.jpg",
+          alt: {
+            zh: "学生举手参与讨论",
+            en: "A student raising a hand to join the discussion",
+          },
+        },
+        {
+          src: "/images/events/eco-team.jpg",
+          alt: {
+            zh: "学生小组围在电脑前整理创意",
+            en: "A student team shaping their idea around a laptop",
+          },
+        },
+        {
+          src: "/images/events/eco-room.jpg",
+          alt: {
+            zh: "学生们在挂满旗帜的教室里听讲",
+            en: "Students listening in the classroom",
+          },
+        },
+        {
+          src: "/images/events/eco-award-1.jpg",
+          alt: {
+            zh: "一组学生与老师、嘉宾举着获奖证书合影",
+            en: "One student team with their certificate, the teacher, and guests",
+          },
+        },
+        {
+          src: "/images/events/eco-award-2.jpg",
+          alt: {
+            zh: "另一组获奖学生在投影前合影",
+            en: "Another winning team photographed in front of the screen",
+          },
+        },
+        {
+          src: "/images/events/eco-award-3.jpg",
+          alt: {
+            zh: "第三组学生展示最佳创意奖证书",
+            en: "A third team holding their Best Creative Idea certificate",
+          },
+        },
+        {
+          src: "/images/events/eco-award-4.jpg",
+          alt: {
+            zh: "第四组学生与嘉宾一起展示证书",
+            en: "A fourth team with guests, showing their certificate",
+          },
+        },
+        {
+          src: "/images/events/eco-guide.jpg",
+          alt: {
+            zh: "引导人在学生中间讲解",
+            en: "The facilitator speaking with students",
+          },
+        },
+        {
+          src: "/images/events/eco-sign.jpg",
+          alt: {
+            zh: "老师为学生填写获奖证书",
+            en: "The teacher writing students' award certificates",
+          },
+        },
+        {
+          src: "/images/events/eco-share.jpg",
+          alt: {
+            zh: "学生们围在一起分享茶点",
+            en: "Students sharing snacks together",
+          },
+        },
+        {
+          src: "/images/events/eco-group.jpg",
+          alt: {
+            zh: "全体参与者在教室里的大合影",
+            en: "The full group together in the classroom",
+          },
+        },
+        {
+          src: "/images/events/eco-partners.jpg",
+          alt: {
+            zh: "引导人与老师站在一起",
+            en: "The facilitator and teacher together",
+          },
+        },
+      ],
+    },
     featured: {
       name: {
         zh: "Small Actions, Big Impact",
@@ -622,8 +810,8 @@ export const copy = {
       {
         title: { zh: "活动参与", en: "Join an Event" },
         body: {
-          zh: "回看舞动疗愈，并了解社区工作坊与可持续行动挑战。",
-          en: "Revisit Dance & Wellness, and see how to join workshops and community challenges.",
+          zh: "回看 Mount Douglas 环保论坛与舞动疗愈，并了解社区工作坊。",
+          en: "Revisit the Mount Douglas environmental forums and Dance & Wellness, and see how to join community workshops.",
         },
         href: "/events",
       },

@@ -136,8 +136,8 @@ export default function HomePage() {
         <div className="split">
           <div className="split__media">
             <Image
-              src={copy.events.recent[0].image}
-              alt={t(copy.events.recent[0].name, lang)}
+              src={copy.events.forum.image}
+              alt={t(copy.events.forum.imageAlt, lang)}
               width={1200}
               height={1500}
               className="event-cover"
@@ -152,11 +152,11 @@ export default function HomePage() {
           <div>
             <div className="section__head">
               <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
-              <h2>{t(copy.events.recent[0].name, lang)}</h2>
+              <h2>{t(copy.events.forum.name, lang)}</h2>
             </div>
-            <p>{t(copy.events.recent[0].headline, lang)}</p>
-            <p>{t(copy.events.recent[0].meta, lang)}</p>
-            <Link href={`/events#${copy.events.recent[0].slug}`} className="btn">
+            <p>{t(copy.events.forum.headline, lang)}</p>
+            <p>{t(copy.events.forum.meta, lang)}</p>
+            <Link href={`/events/${copy.events.forum.slug}`} className="btn">
               {t(copy.cta.learnMore, lang)}
             </Link>
           </div>

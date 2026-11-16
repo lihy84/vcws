@@ -8,6 +8,7 @@ import { copy, t } from "@vcws/content/vcws";
 export default function EventsPage() {
   const { lang } = useLanguage();
   const featured = copy.events.featured;
+  const forum = copy.events.forum;
 
   return (
     <>
@@ -16,6 +17,38 @@ export default function EventsPage() {
         <h1>{t(copy.events.title, lang)}</h1>
         <p>{t(copy.events.intro, lang)}</p>
       </header>
+
+      <section className="section event-story" id={forum.slug}>
+        <div className="split">
+          <div className="split__media">
+            <Image
+              src={forum.image}
+              alt={t(forum.imageAlt, lang)}
+              width={1200}
+              height={1500}
+              className="event-cover"
+              style={{
+                width: "100%",
+                height: "32rem",
+                objectFit: "cover",
+                objectPosition: "center top",
+              }}
+            />
+          </div>
+          <div>
+            <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
+            <h2>{t(forum.name, lang)}</h2>
+            <p style={{ fontSize: "1.15rem", color: "var(--sea-deep)" }}>
+              {t(forum.headline, lang)}
+            </p>
+            <p>{t(forum.subtitle, lang)}</p>
+            <p className="event-meta">{t(forum.meta, lang)}</p>
+            <Link href={`/events/${forum.slug}`} className="btn">
+              {t(copy.cta.learnMore, lang)}
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {copy.events.recent.map((event) => (
         <article key={event.slug} id={event.slug} className="event-story">

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { RecentEvents } from "@/components/RecentEvents";
 import { copy, t } from "@vcws/content/vcws";
 
 export default function HomePage() {
@@ -76,6 +77,9 @@ export default function HomePage() {
                 width={900}
                 height={600}
               />
+              {"imageCaption" in focus ? (
+                <p className="focus-card__caption">{t(focus.imageCaption, lang)}</p>
+              ) : null}
               <div className="focus-card__body">
                 <h3>{t(focus.title, lang)}</h3>
                 <p>{t(focus.body, lang)}</p>
@@ -133,34 +137,10 @@ export default function HomePage() {
       </section>
 
       <section className="section" id="recent-event">
-        <div className="split">
-          <div className="split__media">
-            <Image
-              src={copy.events.forum.image}
-              alt={t(copy.events.forum.imageAlt, lang)}
-              width={1200}
-              height={1500}
-              className="event-cover"
-              style={{
-                width: "100%",
-                height: "32rem",
-                objectFit: "cover",
-                objectPosition: "center top",
-              }}
-            />
-          </div>
-          <div>
-            <div className="section__head">
-              <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
-              <h2>{t(copy.events.forum.name, lang)}</h2>
-            </div>
-            <p>{t(copy.events.forum.headline, lang)}</p>
-            <p>{t(copy.events.forum.meta, lang)}</p>
-            <Link href={`/events/${copy.events.forum.slug}`} className="btn">
-              {t(copy.cta.learnMore, lang)}
-            </Link>
-          </div>
+        <div className="section__head">
+          <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
         </div>
+        <RecentEvents />
       </section>
 
       <section className="section">

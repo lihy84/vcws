@@ -3,12 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { RecentEvents } from "@/components/RecentEvents";
 import { copy, t } from "@vcws/content/vcws";
 
 export default function EventsPage() {
   const { lang } = useLanguage();
   const featured = copy.events.featured;
-  const forum = copy.events.forum;
 
   return (
     <>
@@ -18,111 +18,12 @@ export default function EventsPage() {
         <p>{t(copy.events.intro, lang)}</p>
       </header>
 
-      <section className="section event-story" id={forum.slug}>
-        <div className="split">
-          <div className="split__media">
-            <Image
-              src={forum.image}
-              alt={t(forum.imageAlt, lang)}
-              width={1200}
-              height={1500}
-              className="event-cover"
-              style={{
-                width: "100%",
-                height: "32rem",
-                objectFit: "cover",
-                objectPosition: "center top",
-              }}
-            />
-          </div>
-          <div>
-            <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
-            <h2>{t(forum.name, lang)}</h2>
-            <p style={{ fontSize: "1.15rem", color: "var(--sea-deep)" }}>
-              {t(forum.headline, lang)}
-            </p>
-            <p>{t(forum.subtitle, lang)}</p>
-            <p className="event-meta">{t(forum.meta, lang)}</p>
-            <Link href={`/events/${forum.slug}`} className="btn">
-              {t(copy.cta.learnMore, lang)}
-            </Link>
-          </div>
+      <section className="section">
+        <div className="section__head">
+          <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
         </div>
+        <RecentEvents />
       </section>
-
-      {copy.events.recent.map((event) => (
-        <article key={event.slug} id={event.slug} className="event-story">
-          <section className="section" style={{ paddingBottom: "1.5rem" }}>
-            <div className="split">
-              <div>
-                <p className="section__eyebrow">{t(copy.events.recentTitle, lang)}</p>
-                <h2>{t(event.name, lang)}</h2>
-                <p style={{ fontSize: "1.15rem", color: "var(--sea-deep)" }}>
-                  {t(event.headline, lang)}
-                </p>
-                <p>{t(event.subtitle, lang)}</p>
-                <p className="event-meta">{t(event.meta, lang)}</p>
-                <p className="event-meta">{t(event.facilitator, lang)}</p>
-                <blockquote className="event-quote">{t(event.quote, lang)}</blockquote>
-              </div>
-              <div className="split__media">
-                <Image
-                  src={event.image}
-                  alt={t(event.facilitator, lang)}
-                  width={1200}
-                  height={1500}
-                  className="event-cover"
-                  style={{
-                    width: "100%",
-                    height: "32rem",
-                    objectFit: "cover",
-                    objectPosition: "center top",
-                  }}
-                />
-              </div>
-            </div>
-          </section>
-
-          <section className="section" style={{ paddingTop: 0 }}>
-            <div className="event-prose">
-              {event.lead.map((paragraph) => (
-                <p key={t(paragraph, "en")}>{t(paragraph, lang)}</p>
-              ))}
-            </div>
-            <div className="timeline" style={{ marginTop: "2rem" }}>
-              {event.sections.map((section, index) => (
-                <article key={t(section.title, "en")} className="timeline__item">
-                  <p className="timeline__meta">
-                    {String(index + 1).padStart(2, "0")}
-                  </p>
-                  <h3 style={{ margin: 0, fontFamily: "var(--font-display)" }}>
-                    {t(section.title, lang)}
-                  </h3>
-                  <p style={{ margin: 0 }}>{t(section.body, lang)}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className="section" style={{ paddingTop: 0 }}>
-            <div className="section__head">
-              <h2>{t(copy.events.galleryTitle, lang)}</h2>
-            </div>
-            <div className="photo-grid">
-              {event.gallery.map((photo) => (
-                <figure key={photo.src}>
-                  <Image
-                    src={photo.src}
-                    alt={t(photo.alt, lang)}
-                    width={900}
-                    height={1200}
-                  />
-                </figure>
-              ))}
-            </div>
-          </section>
-        </article>
-      ))}
 
       <section className="section">
         <div className="split">

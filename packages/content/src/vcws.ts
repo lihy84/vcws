@@ -247,6 +247,10 @@ export const copy = {
         ],
       },
       image: "/images/image8.jpg",
+      imageCaption: {
+        zh: "协会发起人之一与BC省省长 Lorne Doerkson 在活动现场",
+        en: "One of our co-founders with BC Premier Lorne Doerkson at an event",
+      },
     },
   ],
   projects: {
